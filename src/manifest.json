@@ -6,10 +6,16 @@
     "author": "emvaized",
     "browser_specific_settings": {
       "gecko": {
-        "id": "double_tab_scroll_mobile@emvaized.dev"
+        "id": "double_tab_scroll_mobile@emvaized.dev",
+        "data_collection_permissions": {
+          "required": ["none"]
+        }
       },
       "gecko_android": {
-        "id": "double_tab_scroll_mobile@emvaized.dev"
+        "id": "double_tab_scroll_mobile@emvaized.dev",
+        "data_collection_permissions": {
+          "required": ["none"]
+        }
       }
     },
     "icons": {
