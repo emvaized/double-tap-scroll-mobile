@@ -18,6 +18,8 @@
     let fastScrollingEnabled = false; // To enter fast scrolling mode, double tap and move finger on a second tap
     let scrollVelocityMultiplier = 1; // Multiplier for scroll speed (higher values will make it faster)
     let continueScrollingOnSingleTap = true; // If true, single tap will scroll page further when it is already scrolling (kinetic scrolling)
+
+    // Constants
     const fastScrollingFriction = 0.93; // Multiplier for dy touch movement during fast scrolling
     const scrollVelocity = 13.5; // Initial speed of the scroll (higher values will make it faster)
     const scrollDecay = 0.98; // The rate at which the scroll slows down (values closer to 1 will make the scroll slower to decelerate) 
@@ -70,9 +72,9 @@
             lastMoveY = null;
             preventFlingScrolling = false;
  
-             // Detect double tap for manual scrolling
-             const currentTapDownTime = new Date().getTime();
-             const tapDownInterval = currentTapDownTime - lastTapDownTime;
+            // Detect double tap for manual scrolling
+            const currentTapDownTime = new Date().getTime();
+            const tapDownInterval = currentTapDownTime - lastTapDownTime;
  
             if (fastScrollingEnabled && tapDownInterval < doubleTapTimeout && tapDownInterval > 0) {
                 // Double-tap detected within timeout
@@ -120,7 +122,8 @@
 
     document.addEventListener('touchend', function(event) {
         // Only proceed if it’s a single-finger touch event
-        if (event.changedTouches.length > 1 || isElementPrevented(event.target)) return;
+        if (event.changedTouches.length > 1 ) return;
+        if (isElementPrevented(event.target) && !isFlingScrolling) return;
  
         const endX = event.changedTouches[0].clientX;
         const endY = event.changedTouches[0].clientY;
