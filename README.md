@@ -10,3 +10,8 @@
 - Fast scrolling mode when double tap and move finger up or down (disabled by default)
 - Available as Firefox addon and as a userscript
 
+## Privacy 🛡️
+This tool doesn't collect any private data. It is fully open source, and you can see the code on Github. It requires access to all urls in order to function properly.
+
+## Support ❤️
+If you enjoy this project, please consider supporting further development by making a small donation [here](https://github.com/emvaized/emvaized.github.io/wiki/Donate-Page) 🙏 
