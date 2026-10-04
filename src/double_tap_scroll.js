@@ -154,7 +154,7 @@
         } else {
             // First tap
             // If kinetic scrolling in proccess, scroll again
-            if(isFlingScrolling){
+            if(isFlingScrolling && continueScrollingOnSingleTap){
                 cancelEvent(event);
                 scrollPage(scrollDown);
                 return;
