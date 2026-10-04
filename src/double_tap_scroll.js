@@ -38,7 +38,7 @@
     let preventFlingScrolling = false; // Use to stop fling scroll when user manually scrolled page
     let isFlingScrolling = false; // To track if page is currently in kinetic scrolling state
 
-    /// Load saved options from Chrome storage if available
+    // Load saved options from Chrome storage if available
     if (typeof chrome !== "undefined" && chrome.storage) {
         let configs = await chrome.storage.sync.get(['fastScrollingEnabled', 'scrollVelocityMultiplier', 'continueScrollingOnSingleTap']);
         if (configs) {

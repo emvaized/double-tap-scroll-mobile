@@ -1,22 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const fastScrollingEnabled = document.getElementById('fastScrollingEnabled');
+    // const fastScrollingEnabled = document.getElementById('fastScrollingEnabled');
     const scrollVelocityMultiplier = document.getElementById('scrollVelocityMultiplier');
     const continueScrollingOnSingleTap = document.getElementById('continueScrollingOnSingleTap');
-    // const saveButton = document.getElementById('save');
 
     // Load saved options
     chrome.storage.sync.get(['fastScrollingEnabled', 'scrollVelocityMultiplier', 'continueScrollingOnSingleTap'], function(result) {
-        fastScrollingEnabled.checked = result.fastScrollingEnabled || false;
+        // fastScrollingEnabled.checked = result.fastScrollingEnabled || false;
         scrollVelocityMultiplier.value = result.scrollVelocityMultiplier || 1;
         continueScrollingOnSingleTap.checked = result.continueScrollingOnSingleTap !== undefined ? result.continueScrollingOnSingleTap : true;
     });
 
     // Save options
-    fastScrollingEnabled.addEventListener('change', function() {
-        chrome.storage.sync.set({
-            fastScrollingEnabled: fastScrollingEnabled.checked
-        });
-    });
+    // fastScrollingEnabled.addEventListener('change', function() {
+    //     chrome.storage.sync.set({
+    //         fastScrollingEnabled: fastScrollingEnabled.checked
+    //     });
+    // });
 
     scrollVelocityMultiplier.addEventListener('change', function() {
         chrome.storage.sync.set({
