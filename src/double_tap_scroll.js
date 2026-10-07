@@ -18,13 +18,13 @@
     let fastScrollingEnabled = false; // To enter fast scrolling mode, double tap and move finger on a second tap
     let scrollVelocityMultiplier = 1; // Multiplier for scroll speed (higher values will make it faster)
     let continueScrollingOnSingleTap = true; // If true, single tap will scroll page further when it is already scrolling (kinetic scrolling)
+    let doubleTapTimeout = 200; // Timeout for second tap in milliseconds
 
     // Constants
     const fastScrollingFriction = 0.93; // Multiplier for dy touch movement during fast scrolling
     const scrollVelocity = 13.5; // Initial speed of the scroll (higher values will make it faster)
     const scrollDecay = 0.98; // The rate at which the scroll slows down (values closer to 1 will make the scroll slower to decelerate) 
     const scrollInterval = 8; // Time in milliseconds between each scroll step (16 ms gives approximately 60 frames per second)
-    const doubleTapTimeout = 200; // Timeout for second tap in milliseconds
     const maxTapMovement = 10; // Maximum touch movement (in pixels) to qualify as a tap
  
     // Service variables
@@ -45,6 +45,7 @@
             fastScrollingEnabled = configs.fastScrollingEnabled || false;
             scrollVelocityMultiplier = configs.scrollVelocityMultiplier || 1;
             continueScrollingOnSingleTap = configs.continueScrollingOnSingleTap !== undefined ? configs.continueScrollingOnSingleTap : true;
+            doubleTapTimeout = configs.doubleTapTimeout !== undefined ? configs.doubleTapTimeout : doubleTapTimeout;
         }
 
         chrome.storage.onChanged.addListener((c) => {
@@ -56,6 +57,9 @@
             }
             if (c.continueScrollingOnSingleTap) {
                 continueScrollingOnSingleTap = c.continueScrollingOnSingleTap.newValue;
+            }
+            if (c.doubleTapTimeout) {
+                doubleTapTimeout = c.doubleTapTimeout.newValue;
             }
         });
     }

@@ -2,11 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // const fastScrollingEnabled = document.getElementById('fastScrollingEnabled');
     const scrollVelocityMultiplier = document.getElementById('scrollVelocityMultiplier');
     const continueScrollingOnSingleTap = document.getElementById('continueScrollingOnSingleTap');
+    const doubleTapTimeout = document.getElementById('doubleTapTimeout');
 
     // Load saved options
-    chrome.storage.sync.get(['fastScrollingEnabled', 'scrollVelocityMultiplier', 'continueScrollingOnSingleTap'], function(result) {
+    chrome.storage.sync.get(['fastScrollingEnabled', 'scrollVelocityMultiplier', 'continueScrollingOnSingleTap', 'doubleTapTimeout'], function(result) {
         // fastScrollingEnabled.checked = result.fastScrollingEnabled || false;
         scrollVelocityMultiplier.value = result.scrollVelocityMultiplier || 1;
+        doubleTapTimeout.value = result.doubleTapTimeout || 200;
         continueScrollingOnSingleTap.checked = result.continueScrollingOnSingleTap !== undefined ? result.continueScrollingOnSingleTap : true;
     });
 
@@ -26,6 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
     continueScrollingOnSingleTap.addEventListener('change', function() {
         chrome.storage.sync.set({
             continueScrollingOnSingleTap: continueScrollingOnSingleTap.checked
+        });
+    });
+
+    doubleTapTimeout.addEventListener('change', function() {
+        chrome.storage.sync.set({
+            doubleTapTimeout: parseInt(doubleTapTimeout.value)
         });
     });
 
