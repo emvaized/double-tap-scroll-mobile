@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Double Tap Scroll",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Scroll page when double tap on empty space (for mobile)",
     "author": "emvaized",
     "browser_specific_settings": {
@@ -22,8 +22,7 @@
         "48": "icon.svg"
     },
     "options_ui": {
-        "page": "options/options.html",
-        "open_in_tab": true
+        "page": "options/options.html"
     },
     "action": {
         "default_popup": "options/options.html",

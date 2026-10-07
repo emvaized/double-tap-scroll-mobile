@@ -2,7 +2,7 @@
 // @name         Scroll page on double tap (mobile)
 // @description  This userscript is designed for mobile browsers, and scrolls page on double tap. Top half of the screen scrolls up, and bottom half scrolls down. When page is already scrolling, single tap will scroll it further. Fast scrolling mode when double tap and move finger (disabled by default).
 // @description:ru Этот скрипт разработан для мобильных браузеров, и прокручивает страницу при двойном нажатии. Верхняя половина экрана прокручивает вверх, а нижняя половина — вниз. Когда страница уже прокручивается, одиночный тап прокрутит её дальше. Режим быстрой прокрутки при двойном тапе и движении пальцем (выключен по умолчанию). 
-// @version      1.0.6
+// @version      1.0.7
 // @author       emvaized
 // @license      MIT
 // @namespace    scroll_page_on_double_tap
@@ -40,7 +40,7 @@
 
     // Load saved options from Chrome storage if available
     if (typeof chrome !== "undefined" && chrome.storage) {
-        let configs = await chrome.storage.sync.get(['fastScrollingEnabled', 'scrollVelocityMultiplier', 'continueScrollingOnSingleTap']);
+        let configs = await chrome.storage.sync.get(['fastScrollingEnabled', 'scrollVelocityMultiplier', 'continueScrollingOnSingleTap', 'doubleTapTimeout']);
         if (configs) {
             fastScrollingEnabled = configs.fastScrollingEnabled || false;
             scrollVelocityMultiplier = configs.scrollVelocityMultiplier || 1;

@@ -1,3 +1,7 @@
+## 1.0.7
+- fixed double tap timeout option not being applied
+- improved design of the options page
+
 ## 1.0.6
 - optimized options page for mobile view
 - added option for double tap timeout
