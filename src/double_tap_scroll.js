@@ -44,10 +44,10 @@
     if (typeof chrome !== "undefined" && chrome.storage) {
         let configs = await chrome.storage.sync.get(['fastScrollingEnabled', 'scrollVelocityMultiplier', 'continueScrollingOnSingleTap', 'doubleTapTimeout']);
         if (configs) {
-            fastScrollingEnabled = configs.fastScrollingEnabled || false;
-            scrollVelocityMultiplier = configs.scrollVelocityMultiplier || 1;
-            continueScrollingOnSingleTap = configs.continueScrollingOnSingleTap !== undefined ? configs.continueScrollingOnSingleTap : true;
-            doubleTapTimeout = configs.doubleTapTimeout !== undefined ? configs.doubleTapTimeout : doubleTapTimeout;
+            fastScrollingEnabled = configs.fastScrollingEnabled ?? false;
+            scrollVelocityMultiplier = configs.scrollVelocityMultiplier ?? 1;
+            continueScrollingOnSingleTap = configs.continueScrollingOnSingleTap ?? true;
+            doubleTapTimeout = configs.doubleTapTimeout ?? doubleTapTimeout;
         }
 
         chrome.storage.onChanged.addListener((c) => {

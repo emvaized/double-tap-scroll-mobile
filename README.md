@@ -10,6 +10,7 @@
 - Top half of the screen scrolls up, and bottom half scrolls down
 - Uses complex fling animation, so the page scrolls smoothly
 - When page is already scrolling, single tap will scroll it further
+- Fast scrolling feature (double tap + move finger up or down) - disabled by default
 - Available as Firefox addon and as a [userscript](https://greasyfork.org/scripts/514788-scroll-page-on-double-tap-mobile)
 
 <img src="./assets/banner.png" height="600">
