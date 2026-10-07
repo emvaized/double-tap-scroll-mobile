@@ -1,3 +1,7 @@
+## 1.0.8
+- add option for fast scrolling (double tap + move finger up or down) - disabled by default
+- various fixes for the options page
+
 ## 1.0.7
 - fixed double tap timeout option not being applied
 - improved design of the options page
