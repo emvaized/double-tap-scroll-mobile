@@ -51,6 +51,6 @@ function setFooterButtons(){
     });
     document.querySelector("#writeAReviewButton").addEventListener("click", function () {
         const isFirefox = navigator.userAgent.indexOf("Firefox") > -1;
-        window.open(isFirefox ? 'https://addons.mozilla.org/ru/firefox/addon/double-tap-scroll/' : 'https://addons.mozilla.org/ru/firefox/addon/double-tap-scroll/', '_blank');
+        window.open(isFirefox ? 'https://addons.mozilla.org/firefox/addon/double-tap-scroll/' : 'https://addons.mozilla.org/firefox/addon/double-tap-scroll/', '_blank');
     });
 }

@@ -4,13 +4,15 @@
 [![Mozilla Add-on Version](https://img.shields.io/amo/v/double-tap-scroll?label=version)](./CHANGELOG.md)
 [![Mozilla Add-on](https://img.shields.io/amo/users/double-tap-scroll?color=%23FF6611&label=users&logo=Firefox-Browser)](https://addons.mozilla.org/firefox/addon/double-tap-scroll/)
 
+<a href="https://addons.mozilla.org/ru/firefox/addon/double-tap-scroll/"><img src="https://user-images.githubusercontent.com/585534/107280546-7b9b2a00-6a26-11eb-8f9f-f95932f4bfec.png" alt="Get for Firefox"></a>
+
 - Scrolls page when double tap on empty space
 - Top half of the screen scrolls up, and bottom half scrolls down
 - Uses complex fling animation, so the page scrolls smoothly
 - When page is already scrolling, single tap will scroll it further
 - Available as Firefox addon and as a [userscript](https://greasyfork.org/scripts/514788-scroll-page-on-double-tap-mobile)
 
-<a href="https://addons.mozilla.org/ru/firefox/addon/double-tap-scroll/"><img src="https://user-images.githubusercontent.com/585534/107280546-7b9b2a00-6a26-11eb-8f9f-f95932f4bfec.png" alt="Get for Firefox"></a>
+<img src="./assets/banner.png" height="600">
 
 ## Privacy 🛡️
 This tool doesn't collect any private data. It is fully open source, and you can see the code on Github. It requires access to all urls in order to function properly.
