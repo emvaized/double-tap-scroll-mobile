@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Double Tap Scrolling",
-    "version": "1.0.9",
+    "version": "1.0.91",
     "description": "Scroll page when double tap on empty space (mobile)",
     "author": "emvaized",
     "browser_specific_settings": {

@@ -1,3 +1,6 @@
+## 1.0.91
+- fixed current domain getting blacklisted when blacklisted domains list is empty
+
 ## 1.0.9
 - added option to blacklist specific domains
 - renamed addon to Double Tap Scrolling

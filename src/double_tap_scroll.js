@@ -2,7 +2,7 @@
 // @name         Double Tap Scrolling (mobile)
 // @description  This userscript is designed for mobile browsers, and scrolls page on double tap. Top half of the screen scrolls up, and bottom half scrolls down. When page is already scrolling, single tap will scroll it further. Fast scrolling mode when double tap and move finger (disabled by default).
 // @description:ru Этот скрипт разработан для мобильных браузеров, и прокручивает страницу при двойном нажатии. Верхняя половина экрана прокручивает вверх, а нижняя половина — вниз. Когда страница уже прокручивается, одиночный тап прокрутит её дальше. Режим быстрой прокрутки при двойном тапе и движении пальцем (выключен по умолчанию). 
-// @version      1.0.9
+// @version      1.0.91
 // @author       emvaized
 // @license      MIT
 // @namespace    scroll_page_on_double_tap
@@ -74,7 +74,7 @@
     // Prevent reflow on blacklisted domains
     const currentDomain = window.location.hostname;
     const blacklistedDomainsArray = blacklistDomains.split(',').map(domain => domain.trim());
-    if (blacklistedDomainsArray.some(domain => currentDomain.includes(domain.trim()))) {
+    if (blacklistedDomainsArray.some(domain => domain && currentDomain.includes(domain.trim()))) {
         console.log(`Double Tap Scroll: Disabled for blacklisted domain: ${currentDomain}`);
         return;
     }
