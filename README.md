@@ -9,6 +9,7 @@
 - When page is already scrolling, single tap will scroll it further
 - Available as Firefox addon and as a [userscript](https://greasyfork.org/scripts/514788-scroll-page-on-double-tap-mobile)
 
+<a href="https://addons.mozilla.org/ru/firefox/addon/double-tap-scroll/"><img src="https://user-images.githubusercontent.com/585534/107280546-7b9b2a00-6a26-11eb-8f9f-f95932f4bfec.png" alt="Get for Firefox"></a>
 
 ## Privacy 🛡️
 This tool doesn't collect any private data. It is fully open source, and you can see the code on Github. It requires access to all urls in order to function properly.
