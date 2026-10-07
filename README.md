@@ -1,7 +1,7 @@
 # <sub><img src="./src/icon.svg" height="45" width="45"></sub> Double Tap Scroll (mobile extension)
 
 [![Greasy Fork Downloads](https://img.shields.io/greasyfork/dt/514788?label=Greasyfork+installs&logo=greasyfork)](https://greasyfork.org/scripts/514788-scroll-page-on-double-tap-mobile)
-[![Mozilla Add-on Version](https://img.shields.io/amo/v/double-tap-scroll?label=version&color=red)](./CHANGELOG.md)
+[![Mozilla Add-on Version](https://img.shields.io/amo/v/double-tap-scroll?label=version)](./CHANGELOG.md)
 [![Mozilla Add-on](https://img.shields.io/amo/users/double-tap-scroll?color=%23FF6611&label=users&logo=Firefox-Browser)](https://addons.mozilla.org/firefox/addon/double-tap-scroll/)
 
 - Scrolls page when double tap on empty space
