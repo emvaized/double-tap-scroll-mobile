@@ -1,4 +1,4 @@
-# <sub><img src="./src/icon.svg" height="45" width="45"></sub> Double Tap Scroll (mobile extension)
+# <sub><img src="./src/icon.svg" height="45" width="45"></sub> Double Tap Scrolling (mobile extension)
 
 [![Greasy Fork Downloads](https://img.shields.io/greasyfork/dt/514788?label=Greasyfork+installs&logo=greasyfork)](https://greasyfork.org/scripts/514788-scroll-page-on-double-tap-mobile)
 [![Mozilla Add-on Version](https://img.shields.io/amo/v/double-tap-scroll?label=version)](./CHANGELOG.md)

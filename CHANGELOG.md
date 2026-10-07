@@ -1,3 +1,7 @@
+## 1.0.9
+- added option to blacklist specific domains
+- renamed addon to Double Tap Scrolling
+
 ## 1.0.8
 - add option for fast scrolling (double tap + move finger up or down) - disabled by default
 - various fixes for the options page
