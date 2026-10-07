@@ -3,13 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const scrollVelocityMultiplier = document.getElementById('scrollVelocityMultiplier');
     const continueScrollingOnSingleTap = document.getElementById('continueScrollingOnSingleTap');
     const doubleTapTimeout = document.getElementById('doubleTapTimeout');
+    const blacklistDomains = document.getElementById('blacklistDomains');
 
     // Load saved options
-    chrome.storage.sync.get(['fastScrollingEnabled', 'scrollVelocityMultiplier', 'continueScrollingOnSingleTap', 'doubleTapTimeout'], function(result) {
+    chrome.storage.sync.get(['fastScrollingEnabled', 'scrollVelocityMultiplier', 'continueScrollingOnSingleTap', 'doubleTapTimeout', 'blacklistDomains'], function(result) {
         fastScrollingEnabled.checked = result.fastScrollingEnabled ?? false;
         scrollVelocityMultiplier.value = result.scrollVelocityMultiplier ?? 1;
         doubleTapTimeout.value = result.doubleTapTimeout ?? 200;
         continueScrollingOnSingleTap.checked = result.continueScrollingOnSingleTap ?? true;
+        blacklistDomains.value = result.blacklistDomains ?? "";
     });
 
     // Save options
@@ -34,6 +36,12 @@ document.addEventListener('DOMContentLoaded', function() {
     doubleTapTimeout.addEventListener('change', function() {
         chrome.storage.sync.set({
             doubleTapTimeout: parseInt(doubleTapTimeout.value)
+        });
+    });
+    
+    blacklistDomains.addEventListener('change', function() {
+        chrome.storage.sync.set({
+            blacklistDomains: blacklistDomains.value
         });
     });
 

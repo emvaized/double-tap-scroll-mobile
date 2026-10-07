@@ -21,6 +21,7 @@
     let scrollVelocityMultiplier = 1; // Multiplier for scroll speed (higher values will make it faster)
     let continueScrollingOnSingleTap = true; // If true, single tap will scroll page further when it is already scrolling (kinetic scrolling)
     let doubleTapTimeout = 200; // Timeout for second tap in milliseconds
+    let blacklistDomains = '';
 
     // Constants
     const fastScrollingFriction = 0.93; // Multiplier for dy touch movement during fast scrolling
@@ -42,12 +43,13 @@
 
     // Load saved options from Chrome storage if available
     if (typeof chrome !== "undefined" && chrome.storage) {
-        let configs = await chrome.storage.sync.get(['fastScrollingEnabled', 'scrollVelocityMultiplier', 'continueScrollingOnSingleTap', 'doubleTapTimeout']);
+        let configs = await chrome.storage.sync.get(['fastScrollingEnabled', 'scrollVelocityMultiplier', 'continueScrollingOnSingleTap', 'doubleTapTimeout', 'blacklistDomains']);
         if (configs) {
             fastScrollingEnabled = configs.fastScrollingEnabled ?? false;
             scrollVelocityMultiplier = configs.scrollVelocityMultiplier ?? 1;
             continueScrollingOnSingleTap = configs.continueScrollingOnSingleTap ?? true;
             doubleTapTimeout = configs.doubleTapTimeout ?? doubleTapTimeout;
+            blacklistDomains = configs.blacklistDomains ?? blacklistDomains;
         }
 
         chrome.storage.onChanged.addListener((c) => {
@@ -63,7 +65,18 @@
             if (c.doubleTapTimeout) {
                 doubleTapTimeout = c.doubleTapTimeout.newValue;
             }
+            if (c.blacklistDomains) {
+                blacklistDomains = c.blacklistDomains.newValue;
+            }
         });
+    }
+
+    // Prevent reflow on blacklisted domains
+    const currentDomain = window.location.hostname;
+    const blacklistedDomainsArray = blacklistDomains.split(',').map(domain => domain.trim());
+    if (blacklistedDomainsArray.some(domain => currentDomain.includes(domain.trim()))) {
+        console.log(`Double Tap Scroll: Disabled for blacklisted domain: ${currentDomain}`);
+        return;
     }
 
     document.addEventListener('touchstart', function(event) {
