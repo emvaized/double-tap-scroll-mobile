@@ -6,6 +6,8 @@
 // @author       emvaized
 // @license      MIT
 // @namespace    scroll_page_on_double_tap
+// @homepageURL  https://github.com/emvaized/double-tap-scroll-mobile/
+// @downloadURL  https://raw.githubusercontent.com/emvaized/double-tap-scroll-mobile/refs/heads/main/src/double_tap_scroll.js
 // @match        *://*/*
 // @grant        none
 // @run-at       document-start
