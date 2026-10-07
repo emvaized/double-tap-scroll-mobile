@@ -22,7 +22,8 @@
         "48": "icon.svg"
     },
     "options_ui": {
-        "page": "options/options.html"
+        "page": "options/options.html",
+        "open_in_tab": true
     },
     "action": {
         "default_popup": "options/options.html",

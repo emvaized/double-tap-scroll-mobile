@@ -38,11 +38,11 @@ function setFooterButtons(){
         window.open('https://github.com/emvaized/emvaized.github.io/wiki/Donate-Page', '_blank');
     });
     
-    // document.querySelector("#githubButton").addEventListener("click", function () {
-    //     window.open('https://github.com/emvaized/open-in-popup-window-extension', '_blank');
-    // });
-    // document.querySelector("#writeAReviewButton").addEventListener("click", function () {
-    //     const isFirefox = navigator.userAgent.indexOf("Firefox") > -1;
-    //     window.open(isFirefox ? 'https://addons.mozilla.org/firefox/addon/open-in-popup-window/' : 'https://chrome.google.com/webstore/detail/open-in-popup-window/gmnkpkmmkhbgnljljcchnakehlkihhie/reviews', '_blank');
-    // });
+    document.querySelector("#githubButton").addEventListener("click", function () {
+        window.open('https://github.com/emvaized/double-tap-scroll-mobile/tree/main', '_blank');
+    });
+    document.querySelector("#writeAReviewButton").addEventListener("click", function () {
+        const isFirefox = navigator.userAgent.indexOf("Firefox") > -1;
+        window.open(isFirefox ? 'https://addons.mozilla.org/ru/firefox/addon/double-tap-scroll/' : 'https://addons.mozilla.org/ru/firefox/addon/double-tap-scroll/', '_blank');
+    });
 }
