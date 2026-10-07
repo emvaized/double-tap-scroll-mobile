@@ -1,3 +1,8 @@
+## 1.0.6
+- optimized options page for mobile view
+- added option for double tap timeout
+- added gradient to the extension icon
+
 ## 1.0.5
 - added support for running as a browser extension
 

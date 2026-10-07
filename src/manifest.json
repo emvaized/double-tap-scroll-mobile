@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
     "name": "Double Tap Scroll",
-    "version": "1.0.5",
-    "description": "Scroll page when double tap on empty space (mobile only)",
+    "version": "1.0.6",
+    "description": "Scroll page when double tap on empty space (for mobile)",
     "author": "emvaized",
     "browser_specific_settings": {
       "gecko": {
