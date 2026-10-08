@@ -2,43 +2,35 @@
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#7138D8"/>
-      <!-- <stop offset="1" stop-color="#7138D8"/> -->
       <stop offset="1" stop-color="#2878E8"/>
     </linearGradient>
   </defs>
 
   <rect width="128" height="128" rx="28" fill="url(#bg)"/>
 
-  <rect x="34" y="11" width="60" height="106" rx="15"
-        fill="#182344" stroke="#FFFFFF" stroke-width="5"/>
-  <rect x="41" y="22" width="46" height="82" rx="7" fill="#F7F8FF"/>
-  <!-- <rect x="55" y="15" width="18" height="3" rx="1.5" fill="#FFFFFF"/> -->
-  <rect x="55" y="16.5" width="18" height="3" rx="1.5" fill="#FFFFFF"/>
-
   <!-- arrows -->
-  <path d="M64 57V37m0 0-9 9m9-9 9 9"
-        fill="none" stroke="#2878E8" stroke-width="6"
+  <!-- up -->
+  <!-- <path d="M46 38 L64 20 L82 38" 
+        fill="none" stroke="#FFFFFF" stroke-width="6" 
+        stroke-linecap="round" stroke-linejoin="round"/> -->
+
+  <!-- down -->
+  <!-- <path d="M46 90 L64 108 L82 90" 
+        fill="none" stroke="#FFFFFF" stroke-width="6" 
+        stroke-linecap="round" stroke-linejoin="round"/> -->
+
+         <!-- up -->
+  <path d="M46 33 L64 15 L82 33" 
+        fill="none" stroke="#FFFFFF" stroke-width="6" 
         stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M64 69v20m0 0-9-9m9 9 9-9"
-        fill="none" stroke="#F05B69" stroke-width="6"
+
+  <!-- down -->
+  <path d="M46 95 L64 113 L82 95" 
+        fill="none" stroke="#FFFFFF" stroke-width="6" 
         stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- <circle cx="64" cy="98" r="2.5" fill="#182344"/> -->
-  <circle cx="64" cy="109" r="2.5" fill="#FFFFFF"/>
-  <!-- <circle cx="111" cy="74" r="7" fill="#FFD166"/> -->
-
-  <!-- circle tap -->
-   <!-- <circle cx="64" cy="98" r="2.5" fill="#182344"/> -->
-  <circle cx="101" cy="63" r="11" fill="#FFFFFF"/>
-  <circle cx="101" cy="63" r="4" fill="#F05B69"/>
-  <circle cx="111" cy="74" r="7" fill="#FFD166"/>
-
-  <!-- <circle cx="101" cy="63" r="11" fill="#FFFFFF"/>
-  <circle cx="101" cy="63" r="7" fill="#FFD166"/>
-  <circle cx="101" cy="63" r="4" fill="#F05B69"/> -->
-
-  <!-- <circle cx="112" cy="108" r="15" fill="#FFFFFF"/>
-  <circle cx="112" cy="108" r="11" fill="#FFD166"/>
-  <circle cx="112" cy="108" r="7" fill="#F05B69"/> -->
+  <!-- circle in center -->
+  <circle cx="64" cy="64" r="14" fill="#FFFFFF"/>
+  <circle cx="64" cy="64" r="7" fill="#F05B69"/>
 
 </svg>
