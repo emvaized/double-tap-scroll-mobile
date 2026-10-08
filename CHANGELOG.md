@@ -1,3 +1,6 @@
+## 1.0.92
+- updated extension icon
+
 ## 1.0.91
 - fixed current domain getting blacklisted when blacklisted domains list is empty
 
