@@ -20,17 +20,24 @@
         stroke-linecap="round" stroke-linejoin="round"/> -->
 
          <!-- up -->
-  <path d="M46 33 L64 15 L82 33" 
+  <!-- <path d="M46 33 L64 15 L82 33" 
+        fill="none" stroke="#FFFFFF" stroke-width="6" 
+        stroke-linecap="round" stroke-linejoin="round"/> -->
+
+        <path d="M46 70 L64 88 L82 70" 
         fill="none" stroke="#FFFFFF" stroke-width="6" 
         stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- down -->
-  <path d="M46 95 L64 113 L82 95" 
+  <path d="M46 90 L64 108 L82 90" 
         fill="none" stroke="#FFFFFF" stroke-width="6" 
         stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- circle in center -->
-  <circle cx="64" cy="64" r="14" fill="#FFFFFF"/>
-  <circle cx="64" cy="64" r="7" fill="#F05B69"/>
+  <!-- <circle cx="64" cy="64" r="14" fill="#FFFFFF"/>
+  <circle cx="64" cy="64" r="7" fill="#F05B69"/> -->
+
+  <circle cx="64" cy="45" r="16" fill="#FFFFFF"/>
+  <circle cx="64" cy="45" r="8" fill="#F05B69"/>
 
 </svg>
