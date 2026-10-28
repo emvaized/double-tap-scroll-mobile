@@ -41,7 +41,7 @@
         "js": [
           "double_tap_scroll.js"
         ],
-        "run_at": "document_start"
+        "run_at": "document_end"
       }
     ]
 }

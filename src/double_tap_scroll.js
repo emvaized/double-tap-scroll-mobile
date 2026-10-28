@@ -10,7 +10,7 @@
 // @downloadURL  https://raw.githubusercontent.com/emvaized/double-tap-scroll-mobile/refs/heads/main/src/double_tap_scroll.js
 // @match        *://*/*
 // @grant        none
-// @run-at       document-start
+// @run-at       document-end
 // ==/UserScript==
  
 (async function() {
